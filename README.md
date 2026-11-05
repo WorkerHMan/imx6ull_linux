@@ -44,3 +44,8 @@ git push origin HEAD:refs/for/main  # 走评审，不要直推 main
 | `imx6ull/docs` | 项目文档 |
 
 工程用 repo 管理：`repo init -u ssh://guoqiangh@localhost:29418/imx6ull/manifest -b main -m linux.xml`
+
+## 状态
+
+- 仓库已初始化，等待导入 linux-imx 4.1.15 内核源码
+- 源码导入后：`make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- imx6ull_alientek_emmc_defconfig`
